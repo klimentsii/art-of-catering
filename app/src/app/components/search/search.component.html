@@ -1,0 +1,23 @@
+
+<div class="container">
+  <section class="gallery">
+    <div class="gallery-header">
+      <mat-form-field>
+        <mat-label>Select an option</mat-label>
+        <mat-select [(value)]="selectedSection">
+          <mat-option>Gallery</mat-option>
+          <mat-option *ngFor="let section of SearchSections | keys" [value]="section">{{ section }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Keyword to search</mat-label>
+        <input type="text" matInput [(ngModel)]="search">
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="gallery-images">
+      <img *ngFor="let image of gallery | section: selectedSection | search: search" [src]="deafaultPath + image.img" alt="">
+    </div>
+  </section>
+</div>

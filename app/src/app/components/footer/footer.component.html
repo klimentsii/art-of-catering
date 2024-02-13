@@ -1,0 +1,25 @@
+<footer class="footer">
+  <div class="container-2">
+    <div class="footer-body">
+      <div class="footer-logo" appScrollAnimation [animation]="animations.bottom">
+        LOGO
+      </div>
+      <nav class="footer-nav">
+        <ul class="footer-nav_ul" appScrollAnimation [animation]="animations.left">
+          <li
+            class="footer-nav_li"
+            *ngFor="let route of routes"
+            [routerLink]="route.path"
+            >
+            <a class="footer-nav_a">{{ route.title }}</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-icons" appScrollAnimation [animation]="animations.right">
+        <a *ngFor="let contact of contacts" [href]="contact.link">
+          <mat-icon>{{ contact.icon }}</mat-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

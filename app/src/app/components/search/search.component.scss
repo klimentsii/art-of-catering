@@ -1,0 +1,24 @@
+.gallery {
+
+  &-header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    mat-form-field {
+      width: 100%;
+    }
+  }
+
+  &-images {
+    columns: 3 auto;
+    column-gap: 5px;
+    img {
+      display: block;
+      margin-bottom: 5px;
+      width: 100%;
+    }
+  }
+}

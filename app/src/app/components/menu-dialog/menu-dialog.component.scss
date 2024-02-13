@@ -1,0 +1,21 @@
+:host {
+  mat-dialog-content {
+    padding: 100px;
+    background-color: black !important;
+    color: white;
+
+    .menu {
+
+      &-ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      &-a {
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

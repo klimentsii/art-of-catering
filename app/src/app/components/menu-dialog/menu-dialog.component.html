@@ -1,0 +1,9 @@
+<mat-dialog-content>
+  <nav class="menu-nav">
+    <ul class="menu-ul">
+      <li class="menu-li" *ngFor="let route of routes" [routerLink]="route.path" mat-dialog-close>
+        <a class="menu-a">{{ route.title }}</a>
+      </li>
+    </ul>
+  </nav>
+</mat-dialog-content>

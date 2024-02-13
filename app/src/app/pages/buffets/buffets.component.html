@@ -1,0 +1,23 @@
+
+<button mat-fab color="basic" class="menu-button" (click)="openDialog()">
+  <mat-icon>menu</mat-icon>
+</button>
+
+<section class="buffets">
+  <div class="buffets-item" appScrollAnimation [animation]="animations.top">
+    <div class="buffets-item-body" *ngFor="let item of leftBuffetsList" [style]="'background-image: url(' + item.img + ');'">
+      <div class="buffets-item-content">
+        <h3 class="buffets-title">{{ item.title }}</h3>
+        <button class="buffets-button" routerLink="/order" [state]="item">Order</button>
+      </div>
+    </div>
+  </div>
+  <div class="buffets-item" appScrollAnimation [animation]="animations.bottom">
+    <div class="buffets-item-body" *ngFor="let item of rightBuffetsList" [style]="'background-image: url(' + item.img + ');'">
+      <div class="buffets-item-content">
+        <h3 class="buffets-title">{{ item.title }}</h3>
+        <button class="buffets-button" routerLink="/order" [state]="item">Order</button>
+      </div>
+    </div>
+  </div>
+</section>

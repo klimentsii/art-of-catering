@@ -1,0 +1,12 @@
+<div [class]="'carousel ' + (isRight ? 'right' : 'left')">
+  <div class="slides" [style.transform]="'translateX(-' + currentItemIndex * 100 + '%)'">
+    <img *ngFor="let item of items; let i = index" [src]="item.img" class="slide" [class.active]="i === currentItemIndex">
+  </div>
+  <div class="navigation" appScrollAnimation [animation]="animations.right">
+    <button *ngFor="let item of items; let i = index" (click)="changeItem(i)" [class.active]="i === currentItemIndex">{{ item.title }} <mat-icon>keyboard_arrow_right</mat-icon></button>
+  </div>
+  <div class="dots" appScrollAnimation [animation]="animations.bottom">
+    <span *ngFor="let _ of items; let i = index" (click)="changeItem(i)" [class.active]="i === currentItemIndex"></span>
+  </div>
+  <div class="link" routerLink="/book-now" [state]="items[currentItemIndex]" appScrollAnimation [animation]="animations.left">BOOK NOW</div>
+</div>

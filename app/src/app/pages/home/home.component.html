@@ -1,0 +1,18 @@
+<app-home-intro></app-home-intro>
+<app-parallax [details]="{
+    bgColor: 'white',
+    color: 'black',
+    height: '80vh',
+    bgImage: '/assets/images/home.png',
+  }"
+  >
+    <h1 appScrollAnimation [animation]="animations.right">
+      Art of Catering is a highly regarded hospitality brand and <div class="yellow">one of the most trusted</div> catering companies in the Kingdom of Saudi Arabia.
+    </h1>
+</app-parallax>
+<app-info
+  height="400px"
+  title="Our Clients"
+  description='description | description | description | description | description | description | description | description | description | description | description | description | description'
+></app-info>
+<app-clients></app-clients>

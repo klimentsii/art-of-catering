@@ -1,0 +1,17 @@
+<header class="header">
+  <div class="container">
+    <div class="header-body">
+      <div class="header-logo" appScrollAnimation [animation]="animations.top">LOGO</div>
+      <nav class="header-nav">
+        <ul class="header-ul" appScrollAnimation [animation]="animations.right">
+          <li class="header-li" *ngFor="let route of routes" [routerLink]="route.path">
+            <a class="header-a">{{ route.title }}</a>
+          </li>
+        </ul>
+      </nav>
+      <button mat-fab color="basic" class="header-button" (click)="openDialog()" appScrollAnimation [animation]="animations.right">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  </div>
+</header>
