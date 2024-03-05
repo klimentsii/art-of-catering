@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { listItem } from 'src/app/components/carousel/carousel.component';
-import { leftBuffetsList } from 'src/app/list';
+import { ActivatedRoute } from '@angular/router';
+import { map } from 'rxjs';
+import { BuffetData, ContentService } from 'src/app/services/content.service';
 
 @Component({
   selector: 'app-order',
@@ -9,9 +9,15 @@ import { leftBuffetsList } from 'src/app/list';
   styleUrls: ['./order.component.scss']
 })
 export class OrderComponent {
-  state: listItem;
+  state: BuffetData;
 
-  constructor(public router: Router){
-    this.state = (this.router.getCurrentNavigation()?.extras.state as listItem) || leftBuffetsList[0];
+  constructor(public activatedRoute: ActivatedRoute, private contentService: ContentService) {}
+
+  ngOnInit(): void {
+    this.contentService.getBuffetsData().subscribe(data => {
+      this.activatedRoute.paramMap
+        .pipe(map(() => window.history.state))
+        .subscribe(state => this.state = state.title ? state : data[0]);
+    });
   }
 }

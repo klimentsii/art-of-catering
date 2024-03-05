@@ -7,7 +7,6 @@ import { BuffetsComponent } from "./pages/buffets/buffets.component";
 import { AboutUsComponent } from "./pages/about-us/about-us.component";
 import { ContactUsComponent } from "./pages/contact-us/contact-us.component";
 
-import { leftBuffetsList, serviceList } from "./list";
 import { BookNowComponent } from "./pages/book-now/book-now.component";
 import { OrderComponent } from "./pages/order/order.component";
 
@@ -54,12 +53,11 @@ export const hidedRoutes: Routes = [
     path: 'book-now',
     component: BookNowComponent,
     title: 'book now',
-    data: serviceList[0],
   },
   {
     path: 'order',
     component: OrderComponent,
     title: 'order',
-    data: leftBuffetsList[0],
   },
 ]
+

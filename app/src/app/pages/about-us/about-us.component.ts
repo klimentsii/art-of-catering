@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContentService } from 'src/app/services/content.service';
 
 @Component({
   selector: 'app-about-us',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent {
+  bgImage: string;
 
+  constructor(private contentService: ContentService) { }
+
+  ngOnInit(): void {
+    this.contentService.getBAboutUsData().subscribe(data => { this.bgImage = data['parallax-image'] });
+  }
 }

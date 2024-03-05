@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContentService } from 'src/app/services/content.service';
 
 @Component({
   selector: 'app-philosophy',
@@ -6,4 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./philosophy.component.scss']
 })
 export class PhilosophyComponent {
+  parallaxImage: string;
+
+  constructor(private contentService: ContentService) { }
+
+  ngOnInit(): void {
+    this.contentService.getPhilosophyData().subscribe(data => { this.parallaxImage = data['parallax-image'] });
+  }
 }

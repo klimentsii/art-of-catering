@@ -22,6 +22,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 import { PhilosophyIntroComponent } from './components/philosophy-intro/philosophy-intro.component';
 import { ParallaxComponent } from './components/parallax/parallax.component';
@@ -40,6 +41,10 @@ import { SearchComponent } from './components/search/search.component';
 import { KeysPipe } from './pipes/keys.pipe';
 import { SectionPipe } from './pipes/section.pipe';
 import { SearchPipe } from './pipes/search.pipe';
+import { TextComponent } from './components/text/text.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SafePipe } from './pipes/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -70,6 +75,9 @@ import { SearchPipe } from './pipes/search.pipe';
     KeysPipe,
     SectionPipe,
     SearchPipe,
+    TextComponent,
+    SliderComponent,
+    SafePipe,
   ],
   imports: [
     BrowserModule,
@@ -84,6 +92,8 @@ import { SearchPipe } from './pipes/search.pipe';
     MatRadioModule,
     MatDialogModule,
     MatSelectModule,
+    HttpClientModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

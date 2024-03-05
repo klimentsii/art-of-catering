@@ -1,0 +1,8 @@
+<div class="carousel">
+  <div class="carousel__slides" [style.transform]="'translateX(-' + currentItemIndex * 100 + '%)'">
+    <img *ngFor="let item of slides; let i = index" [src]="item" class="carousel__slide" [class.active]="i === currentItemIndex">
+  </div>
+  <div class="carousel__dots" appScrollAnimation [animation]="animations.right">
+    <span *ngFor="let _ of slides; let i = index" (click)="changeItem(i)" [class.active]="i === currentItemIndex"></span>
+  </div>
+</div>

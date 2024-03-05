@@ -44,7 +44,11 @@
       transition: all .3s;
 
       &:hover {
-        opacity: .8;
+        transform: scale(1.1) !important;
+      }
+
+      &:disabled {
+        background-color: gray;
       }
     }
   }

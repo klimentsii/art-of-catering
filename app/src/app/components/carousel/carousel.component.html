@@ -1,12 +1,14 @@
-<div [class]="'carousel ' + (isRight ? 'right' : 'left')">
-  <div class="slides" [style.transform]="'translateX(-' + currentItemIndex * 100 + '%)'">
-    <img *ngFor="let item of items; let i = index" [src]="item.img" class="slide" [class.active]="i === currentItemIndex">
+<div class="carousel" [style.height]="carouselHeight"[ngClass]="isRight ? 'right' : 'left'">
+  <div class="slides" [style.transform]="'translateX(-' + currentSlideIndex * 100 + '%)'">
+    <div class="slide" *ngFor="let slide of currentSection?.images">
+      <img [src]="slide" alt="Slide" />
+    </div>
   </div>
-  <div class="navigation" appScrollAnimation [animation]="animations.right">
-    <button *ngFor="let item of items; let i = index" (click)="changeItem(i)" [class.active]="i === currentItemIndex">{{ item.title }} <mat-icon>keyboard_arrow_right</mat-icon></button>
+  <div class="controls">
+    <button *ngFor="let section of sections; let i = index" (click)="goToSection(i)" [class.active]="currentSectionIndex === i">{{ section.title }}</button>
   </div>
-  <div class="dots" appScrollAnimation [animation]="animations.bottom">
-    <span *ngFor="let _ of items; let i = index" (click)="changeItem(i)" [class.active]="i === currentItemIndex"></span>
+  <div class="dots">
+    <span *ngFor="let slide of currentSection?.images; let i = index" (click)="goToSlide(i)" [class.active]="currentSlideIndex === i"></span>
   </div>
-  <div class="link" routerLink="/book-now" [state]="items[currentItemIndex]" appScrollAnimation [animation]="animations.left">BOOK NOW</div>
+  <button class="book" routerLink="/book-now" [state]="currentSection">Book now</button>
 </div>

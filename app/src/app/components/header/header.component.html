@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">
     <div class="header-body">
-      <div class="header-logo" appScrollAnimation [animation]="animations.top">LOGO</div>
+      <img src="/assets/images/logo.png" appScrollAnimation [animation]="animations.top" class="header__logo">
       <nav class="header-nav">
         <ul class="header-ul" appScrollAnimation [animation]="animations.right">
           <li class="header-li" *ngFor="let route of routes" [routerLink]="route.path">

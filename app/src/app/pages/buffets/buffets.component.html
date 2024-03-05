@@ -4,16 +4,16 @@
 </button>
 
 <section class="buffets">
-  <div class="buffets-item" appScrollAnimation [animation]="animations.top">
-    <div class="buffets-item-body" *ngFor="let item of leftBuffetsList" [style]="'background-image: url(' + item.img + ');'">
+  <div class="buffets-item" appScrollAnimation [animation]="animations.left">
+    <div class="buffets-item-body" *ngFor="let item of leftBuffetsList" [style]="'background-image: url(' + item['background-image'] + ');'">
       <div class="buffets-item-content">
         <h3 class="buffets-title">{{ item.title }}</h3>
         <button class="buffets-button" routerLink="/order" [state]="item">Order</button>
       </div>
     </div>
   </div>
-  <div class="buffets-item" appScrollAnimation [animation]="animations.bottom">
-    <div class="buffets-item-body" *ngFor="let item of rightBuffetsList" [style]="'background-image: url(' + item.img + ');'">
+  <div class="buffets-item">
+    <div class="buffets-item-body" *ngFor="let item of rightBuffetsList" [style]="'background-image: url(' + item['background-image'] + ');'">
       <div class="buffets-item-content">
         <h3 class="buffets-title">{{ item.title }}</h3>
         <button class="buffets-button" routerLink="/order" [state]="item">Order</button>

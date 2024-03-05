@@ -1,0 +1,221 @@
+{
+  "home": {
+    "video-link": "https://www.youtube.com/embed/kJQP7kiw5Fk?si=bhAUOX5ajMjfHWXj",
+    "intro-image": "/assets/images/home-intro.png",
+    "parallax-image": "/assets/images/home.jpg",
+    "client-logos": [
+      "/assets/images/clients/2040026-1503062910.png",
+      "/assets/images/clients/Air Products Logo.png",
+      "/assets/images/clients/Baker Hughes.png",
+      "/assets/images/clients/FwQ_cYWWAAUgj6F.jpeg",
+      "/assets/images/clients/General_Entertainment_Authority_2019_logo.svg.png",
+      "/assets/images/clients/images.png",
+      "/assets/images/clients/jSib4gVv_400x400.jpg",
+      "/assets/images/clients/mjmoaa-almhydb-alestthmary-1610434384-251.png",
+      "/assets/images/clients/nbs.png",
+      "/assets/images/clients/Screenshot 2023-10-23 102614.png",
+      "/assets/images/clients/Screenshot 2023-10-23 104457.png",
+      "/assets/images/clients/Screenshot 2023-10-23 123559.png",
+      "/assets/images/clients/Screenshot 2023-10-24 120015.png",
+      "/assets/images/clients/Screenshot 2023-10-24 123903.png",
+      "/assets/images/clients/spsp-logo1.png",
+      "/assets/images/clients/united-naghi-english-logo.png",
+      "/assets/images/clients/WhatsApp Image 2023-10-24 at 11.39.31 AM.jpeg",
+      "/assets/images/clients/WhatsApp Image 2023-10-24 at 12.31.06 PM.jpeg",
+      "/assets/images/clients/zfr05nzt_mcy.png",
+      "/assets/images/clients/البنك-الأهلي-السعودي-750x430.png",
+      "/assets/images/clients/بنك-التنمية-الاجتماعية.png",
+      "/assets/images/clients/دواء.png",
+      "/assets/images/clients/مجموعة-العليان-القابضة.jpg",
+      "/assets/images/clients/منشات.png"
+    ]
+  },
+  "philosophy": {
+    "intro-image": "/assets/images/philosophy-intro.jpg",
+    "parallax-image": "/assets/images/philosophy.jpg"
+  },
+  "service1": [
+    {
+      "title": "Flower",
+      "description": "Blossom Elegance – Elevate your events with our exquisite floral arrangements, adding a touch of natural beauty to every celebration.",
+      "images": [
+        "/assets/images/services/flower1.jpg",
+        "/assets/images/services/flower2.jpg",
+        "/assets/images/services/flower3.png"
+      ]
+    },
+    {
+      "title": "Decoration",
+      "description": "Decorate with Distinction – Transform your venue into a stunning masterpiece with our tasteful decorations, ensuring a visually captivating atmosphere.",
+      "images": [
+        "/assets/images/services/decoration1.jpg",
+        "/assets/images/services/decoration2.jpg",
+        "/assets/images/services/decoration3.png"
+      ]
+    },
+    {
+      "title": "Setup",
+      "description": "Setup Serenity – Let us handle the logistics with our seamless setup services, ensuring a stress-free and well-organized event experience.",
+      "images": [
+        "/assets/images/services/setup1.jpg",
+        "/assets/images/services/setup2.jpg",
+        "/assets/images/services/setup3.jpg"
+      ]
+    },
+    {
+      "title": "Waiters",
+      "description": "Service with a Smile – Our professional waiters are ready to cater to your guests, ensuring a smooth and delightful dining experience.",
+      "images": [
+        "/assets/images/services/waiters1.jpg",
+        "/assets/images/services/waiters2.jpg",
+        "/assets/images/services/"
+      ]
+    },
+    {
+      "title": "Tatima (Table Setting)",
+      "description": "Table Elegance, Tailored for You – Our Tatima service creates a refined and inviting table setting, setting the perfect ambiance for your celebration.",
+      "images": [
+        "/assets/images/services/tatima1.jpg",
+        "/assets/images/services/tatima2.jpg",
+        "/assets/images/services/tatima3.jpg"
+      ]
+    }
+  ],
+  "service2": [
+    {
+      "title": "Corporate Meals",
+      "description": "Culinary Excellence for Business – Elevate your corporate gatherings with our gourmet Corporate Meal options, tailored to impress and satisfy.",
+      "images": [
+        "/assets/images/services/corporate-meal1.png",
+        "/assets/images/services/corporate-meal2.jpg",
+        "/assets/images/services/corporate-meal3.png"
+      ]
+    },
+    {
+      "title": "Corporate Events",
+      "description": "Crafting Memorable Moments – Let us curate your Corporate Events with precision and style, ensuring a seamless and me.",
+      "images": [
+        "/assets/images/services/corporate-events1.jpg",
+        "/assets/images/services/corporate-events2.png",
+        "/assets/images/services/corporate-events3.png"
+      ]
+    },
+    {
+      "title": "Celebration",
+      "description": "",
+      "images": [
+        "/assets/images/services/celebration1.jpg",
+        "/assets/images/services/celebration2.jpg",
+        "/assets/images/services/celebration3.jpg"
+      ]
+    }
+  ],
+  "gallery": {
+    "sections": [
+      "Buffets",
+      "Flower"
+    ],
+    "items": [
+      {
+        "image": "",
+        "section": "",
+        "keywords": ""
+      },
+      {
+        "image": "",
+        "section": "",
+        "keywords": ""
+      },
+      {
+        "image": "",
+        "section": "",
+        "keywords": ""
+      },
+      {
+        "image": "",
+        "section": "",
+        "keywords": ""
+      },
+      {
+        "image": "",
+        "section": "",
+        "keywords": ""
+      }
+    ]
+  },
+  "buffets": [
+    {
+      "title": "Breakfast",
+      "description": "Begin your day with Breakfast Bliss – a delightful selection of morning treats to add a touch of joy to your mornings.",
+      "background-image": "/assets/images/buffets/breakfast.jpeg",
+      "slider-images": [
+        "/assets/images/buffets/breakfast.jpg",
+        "/assets/images/buffets/breakfast2.jpg",
+        "/assets/images/buffets/breakfast3.jpg"
+      ]
+    },
+    {
+      "title": "Live coocking",
+      "description": "Experience the magic of Live Cooking – where our skilled chefs craft delicious dishes right before your eyes, making every event a culinary adventure.",
+      "background-image": "/assets/images/buffets/live-coocking.jpg",
+      "slider-images": [
+        "/assets/images/buffets/live-coocking2.jpg",
+        "/assets/images/buffets/live-coocking3.png",
+        "/assets/images/buffets/"
+      ]
+    },
+    {
+      "title": "Lunch",
+      "description": "Savor the moment with Lunch Delights – a delicious array of dishes, perfect for a satisfying midday break.",
+      "background-image": "/assets/images/buffets/lunch.jpg",
+      "slider-images": [
+        "/assets/images/buffets/lunch2.jpg",
+        "/assets/images/buffets/lunch3.jpg",
+        "/assets/images/buffets/lunch4.jpg"
+      ]
+    },
+    {
+      "title": "BBQ",
+      "description": "Grill & Chill – Enjoy the warmth and flavor of our BBQ Feast, bringing friends and family together for a delightful experience.",
+      "background-image": "/assets/images/buffets/bbq.jpg",
+      "slider-images": [
+        "/assets/images/buffets/",
+        "/assets/images/buffets/",
+        "/assets/images/buffets/"
+      ]
+    },
+    {
+      "title": "Dinner",
+      "description": "Dine in Style – Our Dinner Collection brings together flavorful choices for a tasteful and enjoyable evening meal.",
+      "background-image": "/assets/images/buffets/dinner.jpeg",
+      "slider-images": [
+        "/assets/images/buffets/dinner2.jpg",
+        "/assets/images/buffets/dinner3.jpg",
+        "/assets/images/buffets/dinner4.jpg"
+      ]
+    },
+    {
+      "title": "Refreshment",
+      "description": "Stay refreshed with our Beverage Harmony – a thoughtfully curated selection to keep you cool and satisfied at any event.",
+      "background-image": "/assets/images/buffets/refreshment.jpg",
+      "slider-images": [
+        "/assets/images/buffets/refreshment2.jpg",
+        "/assets/images/buffets/refreshment3.jpg",
+        "/assets/images/buffets/refreshment4.jpg"
+      ]
+    },
+    {
+      "title": "Finger food",
+      "description": "Bite-sized Perfection – Elevate your gatherings with our Finger Food Extravaganza, offering tasty treats for every occasion.",
+      "background-image": "/assets/images/buffets/fingerfood.jpg",
+      "slider-images": [
+        "/assets/images/buffets/fingerfood2.jpg",
+        "/assets/images/buffets/fingerfood3.jpg",
+        "/assets/images/buffets/fingerfood4.jpg"
+      ]
+    }
+  ],
+  "about-us": {
+    "parallax-image": "/assets/images/about-us.jpg"
+  }
+}

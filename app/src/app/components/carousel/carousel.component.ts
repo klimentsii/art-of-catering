@@ -1,11 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { animations } from 'src/app/animations';
-
-export interface listItem {
-  title: string;
-  img: string;
-  description: string;
-}
+import { ActivatedRoute } from '@angular/router';
+import { ContentService, Service } from 'src/app/services/content.service';
 
 @Component({
   selector: 'app-carousel',
@@ -13,15 +8,24 @@ export interface listItem {
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent {
-  @Input() items: Array<listItem>;
+  @Input() sections: Service[] = [];
   @Input() isRight: boolean = true;
 
-  animations = animations;
-  currentItemIndex = 0;
+  currentSectionIndex = 0;
+  currentSlideIndex = 0;
+  carouselHeight = 'calc(100vh - 120px)';
 
-  constructor() { }
+  goToSection(index: number) {
+    this.currentSectionIndex = index;
+    this.currentSlideIndex = 0;
+  }
 
-  changeItem(index: number) {
-    this.currentItemIndex = index;
+  goToSlide(index: number) {
+    this.currentSlideIndex = index;
+  }
+
+  get currentSection(): Service {
+    return this.sections[this.currentSectionIndex];
   }
 }
+

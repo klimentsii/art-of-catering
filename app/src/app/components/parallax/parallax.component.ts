@@ -15,6 +15,7 @@ export interface ParallaxModel {
 })
 export class ParallaxComponent {
   @Input() details!: ParallaxModel;
+  @Input() contentExist: boolean = true;
 
   animations = animations;
 }

@@ -17,6 +17,8 @@
           <input type="text" matInput formControlName="eventDate">
           <mat-icon matSuffix>calendar_today</mat-icon>
           <mat-error *ngIf="form.controls.eventDate.errors?.required">Event date is <strong>required</strong></mat-error>
+          <mat-error *ngIf="form.controls.eventDate.errors?.invalidDate">Event date is <strong>invalid</strong> (YYYY-MM-DD)</mat-error>
+          <mat-error *ngIf="form.controls.eventDate.errors?.futureDate">The date of the event is already in the <strong>past</strong></mat-error>
         </mat-form-field>
 
         <mat-form-field appScrollAnimation [animation]="animations.right">
@@ -27,9 +29,9 @@
         </mat-form-field>
 
         <mat-form-field appScrollAnimation [animation]="animations.left">
-          <mat-label>Number of audience</mat-label>
-          <input type="text" matInput formControlName="numberOfAudience">
-          <mat-error *ngIf="form.controls.numberOfAudience.errors?.required">Number of audience is <strong>required</strong></mat-error>
+          <mat-label>Number of guests</mat-label>
+          <input type="text" matInput formControlName="numberOfGuests">
+          <mat-error *ngIf="form.controls.numberOfGuests.errors?.required">Number of audience is <strong>required</strong></mat-error>
         </mat-form-field>
 
         <mat-form-field appScrollAnimation [animation]="animations.right">
@@ -50,7 +52,7 @@
           <mat-error *ngIf="form.controls.information.errors?.required">Information is <strong>required</strong></mat-error>
         </mat-form-field>
 
-        <button mat-flat-button  appScrollAnimation [animation]="animations.bottom">SUBMIT</button>
+        <button [disabled]="form.invalid" mat-flat-button appScrollAnimation [animation]="animations.top" (click)="submitForm()">SUBMIT</button>
       </form>
     </div>
   </div>

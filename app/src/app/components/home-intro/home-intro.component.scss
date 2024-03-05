@@ -1,6 +1,6 @@
 .intro {
-  background-image: url('/assets/images/home-intro.jpg');
-  background-size: contain;
+  background-image: url('/assets/images/home-intro.png');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -36,7 +36,7 @@
     &_description {
       padding: 20px;
       font-size: 20px;
-      background-color: white;
+      background-color: #CECFD2;
     }
 
     &_nav {

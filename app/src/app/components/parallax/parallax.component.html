@@ -1,5 +1,5 @@
 <section class="parallax" [style]="'height:' + details.height + ';' + 'background-image: url(' + details.bgImage + ');'">
-  <div class="parallax-body" [style]="'background-color:' + details.bgColor + ';' + 'color:' + details.color + ';'">
+  <div *ngIf="contentExist" class="parallax-body" [style]="'background-color:' + details.bgColor + ';' + 'color:' + details.color + ';'">
     <div class="container-2" style="height: fit-content;" appScrollAnimation [animation]="animations.right">
       <ng-content></ng-content>
     </div>

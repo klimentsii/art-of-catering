@@ -23,7 +23,9 @@
     }
 
     &:nth-child(2) {
-      background: url('/assets/images/philosophy-intro.jpg') center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right;
     }
   }
 }
