@@ -1,8 +1,9 @@
 .intro {
-  background-image: url('/assets/images/home-intro.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  color: white;
 
   height: 100vh;
 
@@ -26,7 +27,20 @@
     }
 
     &_logo {
-      font-size: 24px;
+      width: 120px;
+      height: 120px;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
     }
 
     &_welcome {
@@ -36,7 +50,9 @@
     &_description {
       padding: 20px;
       font-size: 20px;
-      background-color: #CECFD2;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      color: white;
     }
 
     &_nav {
@@ -47,6 +63,10 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 20px;
       gap: 10px;
     }
 
@@ -55,16 +75,15 @@
       font-size: 20px;
       text-transform: uppercase;
     }
+
+    a {
+      color: white;
+    }
   }
 }
 
 @media (max-width: 900px) {
   .intro-item_description {
     display: none;
-  }
-
-  .intro-item_nav {
-    background-color: white;
-    padding: 10px 0 0 10px;
   }
 }

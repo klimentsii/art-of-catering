@@ -1,8 +1,6 @@
-<div class="carousel" [style.height]="carouselHeight"[ngClass]="isRight ? 'right' : 'left'">
+<div class="carousel" [ngClass]="isRight ? 'right' : 'left'">
   <div class="slides" [style.transform]="'translateX(-' + currentSlideIndex * 100 + '%)'">
-    <div class="slide" *ngFor="let slide of currentSection?.images">
-      <img [src]="slide" alt="Slide" />
-    </div>
+    <div class="slide" *ngFor="let slide of currentSection?.images" [ngStyle]="{ backgroundImage: 'url(' + slide + ')'}"></div>
   </div>
   <div class="controls">
     <button *ngFor="let section of sections; let i = index" (click)="goToSection(i)" [class.active]="currentSectionIndex === i">{{ section.title }}</button>

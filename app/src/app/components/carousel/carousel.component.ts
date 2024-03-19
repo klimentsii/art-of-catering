@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ContentService, Service } from 'src/app/services/content.service';
 
@@ -7,13 +7,22 @@ import { ContentService, Service } from 'src/app/services/content.service';
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss']
 })
-export class CarouselComponent {
+export class CarouselComponent implements OnInit {
   @Input() sections: Service[] = [];
   @Input() isRight: boolean = true;
 
   currentSectionIndex = 0;
   currentSlideIndex = 0;
-  carouselHeight = 'calc(100vh - 120px)';
+
+  ngOnInit(): void {
+    setInterval(() => {
+      if (this.currentSlideIndex === this.sections[this.currentSectionIndex].images.length - 1) {
+        this.currentSlideIndex = 0;
+      } else {
+        this.currentSlideIndex++;
+      }
+    }, 5000)
+  }
 
   goToSection(index: number) {
     this.currentSectionIndex = index;

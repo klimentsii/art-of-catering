@@ -50,6 +50,7 @@ export interface JsonData {
   gallery: GalleryData;
   buffets: BuffetData[];
   "about-us": AboutUsData;
+  rewards: Array<string>;
 }
 
 @Injectable({
@@ -90,9 +91,21 @@ export class ContentService {
     );
   }
 
-  getBAboutUsData(): Observable<AboutUsData> {
+  getAboutUsData(): Observable<AboutUsData> {
     return this.http.get<JsonData>(this.url).pipe(
       map((data: JsonData) => data['about-us'])
+    );
+  }
+
+  getRewardsData(): Observable<Array<string>> {
+    return this.http.get<JsonData>(this.url).pipe(
+      map((data: JsonData) => data.rewards)
+    );
+  }
+
+  getGalleryData(): Observable<GalleryData> {
+    return this.http.get<JsonData>(this.url).pipe(
+      map((data: JsonData) => data.gallery)
     );
   }
 }

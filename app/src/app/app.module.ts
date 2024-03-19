@@ -38,7 +38,6 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { ClientsComponent } from './components/clients/clients.component';
 import { VideoDialogComponent } from './components/video-dialog/video-dialog.component';
 import { SearchComponent } from './components/search/search.component';
-import { KeysPipe } from './pipes/keys.pipe';
 import { SectionPipe } from './pipes/section.pipe';
 import { SearchPipe } from './pipes/search.pipe';
 import { TextComponent } from './components/text/text.component';
@@ -72,7 +71,6 @@ import { SafePipe } from './pipes/safe.pipe';
     ClientsComponent,
     VideoDialogComponent,
     SearchComponent,
-    KeysPipe,
     SectionPipe,
     SearchPipe,
     TextComponent,

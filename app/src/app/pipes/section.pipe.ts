@@ -1,11 +1,11 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { GalleryItemModel } from '../gallery';
+import { GalleryItem } from '../services/content.service';
 
 @Pipe({
   name: 'section'
 })
 export class SectionPipe implements PipeTransform {
-  transform(gallery: Array<GalleryItemModel>, section: string): Array<GalleryItemModel> {
+  transform(gallery: Array<GalleryItem>, section: string): Array<GalleryItem> {
     if (!section) {
       return gallery;
     } else {

@@ -1,7 +1,7 @@
 {
   "home": {
     "video-link": "https://www.youtube.com/embed/kJQP7kiw5Fk?si=bhAUOX5ajMjfHWXj",
-    "intro-image": "/assets/images/home-intro.png",
+    "intro-image": "/assets/images/home-intro.jpg",
     "parallax-image": "/assets/images/home.jpg",
     "client-logos": [
       "/assets/images/clients/2040026-1503062910.png",
@@ -66,9 +66,9 @@
       "title": "Waiters",
       "description": "Service with a Smile – Our professional waiters are ready to cater to your guests, ensuring a smooth and delightful dining experience.",
       "images": [
-        "/assets/images/services/waiters1.jpg",
-        "/assets/images/services/waiters2.jpg",
-        "/assets/images/services/"
+        "/assets/images/services/",
+        "/assets/images/services/",
+        "/assets/images/services/waiters3.png"
       ]
     },
     {
@@ -147,11 +147,11 @@
     {
       "title": "Breakfast",
       "description": "Begin your day with Breakfast Bliss – a delightful selection of morning treats to add a touch of joy to your mornings.",
-      "background-image": "/assets/images/buffets/breakfast.jpeg",
+      "background-image": "/assets/images/buffets/breakfast.jpg",
       "slider-images": [
-        "/assets/images/buffets/breakfast.jpg",
         "/assets/images/buffets/breakfast2.jpg",
-        "/assets/images/buffets/breakfast3.jpg"
+        "/assets/images/buffets/breakfast3.jpg",
+        "/assets/images/buffets/"
       ]
     },
     {
@@ -179,7 +179,7 @@
       "description": "Grill & Chill – Enjoy the warmth and flavor of our BBQ Feast, bringing friends and family together for a delightful experience.",
       "background-image": "/assets/images/buffets/bbq.jpg",
       "slider-images": [
-        "/assets/images/buffets/",
+        "/assets/images/buffets/bbq.jpg",
         "/assets/images/buffets/",
         "/assets/images/buffets/"
       ]
@@ -187,7 +187,7 @@
     {
       "title": "Dinner",
       "description": "Dine in Style – Our Dinner Collection brings together flavorful choices for a tasteful and enjoyable evening meal.",
-      "background-image": "/assets/images/buffets/dinner.jpeg",
+      "background-image": "/assets/images/buffets/dinner5.jpg",
       "slider-images": [
         "/assets/images/buffets/dinner2.jpg",
         "/assets/images/buffets/dinner3.jpg",
@@ -197,25 +197,41 @@
     {
       "title": "Refreshment",
       "description": "Stay refreshed with our Beverage Harmony – a thoughtfully curated selection to keep you cool and satisfied at any event.",
-      "background-image": "/assets/images/buffets/refreshment.jpg",
+      "background-image": "/assets/images/buffets/refreshment4.jpg",
       "slider-images": [
         "/assets/images/buffets/refreshment2.jpg",
         "/assets/images/buffets/refreshment3.jpg",
-        "/assets/images/buffets/refreshment4.jpg"
+        "/assets/images/buffets/"
       ]
     },
     {
       "title": "Finger food",
       "description": "Bite-sized Perfection – Elevate your gatherings with our Finger Food Extravaganza, offering tasty treats for every occasion.",
-      "background-image": "/assets/images/buffets/fingerfood.jpg",
+      "background-image": "/assets/images/buffets/fingerfood4.jpg",
       "slider-images": [
         "/assets/images/buffets/fingerfood2.jpg",
         "/assets/images/buffets/fingerfood3.jpg",
-        "/assets/images/buffets/fingerfood4.jpg"
+        "/assets/images/buffets/"
+      ]
+    },
+    {
+      "title": "Coffe break",
+      "description": "Elevate Your Moment of Pause! Indulge in a delightful blend of premium coffee, perfect for your quick escape. Savor the rich flavors and recharge during your break. Experience Coffee Break – Where Every Sip Counts.",
+      "background-image": "/assets/images/buffets/coffee-break.jpg",
+      "slider-images": [
+        "/assets/images/buffets/coffee-break2.jpg",
+        "/assets/images/buffets/coffee-break3.jpg",
+        "/assets/images/buffets/coffee-break4.jpg"
       ]
     }
   ],
   "about-us": {
     "parallax-image": "/assets/images/about-us.jpg"
-  }
+  },
+  "rewards": [
+    "/assets/images/rewards/ART OF CATERING 9-1.png",
+    "/assets/images/rewards/ART OF CATERING 14-1.png",
+    "/assets/images/rewards/ART OF CATERING 22-1.png",
+    "/assets/images/rewards/45-1.png"
+  ]
 }

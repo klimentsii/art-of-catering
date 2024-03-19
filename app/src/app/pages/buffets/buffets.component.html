@@ -1,10 +1,9 @@
-
 <button mat-fab color="basic" class="menu-button" (click)="openDialog()">
   <mat-icon>menu</mat-icon>
 </button>
 
 <section class="buffets">
-  <div class="buffets-item" appScrollAnimation [animation]="animations.left">
+  <div class="buffets-item">
     <div class="buffets-item-body" *ngFor="let item of leftBuffetsList" [style]="'background-image: url(' + item['background-image'] + ');'">
       <div class="buffets-item-content">
         <h3 class="buffets-title">{{ item.title }}</h3>

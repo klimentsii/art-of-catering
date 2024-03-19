@@ -14,6 +14,7 @@ export class BuffetsComponent implements OnInit {
   rightBuffetsList: BuffetData[] = [];
   currentPosition = 0;
   lastAnimation = 0;
+  touchStartY = 0; // Добавляем переменную для отслеживания начальной точки касания
 
   animations = animations;
 
@@ -37,17 +38,28 @@ export class BuffetsComponent implements OnInit {
 
   @HostListener('wheel', ['$event'])
   onMouseWheel(event: WheelEvent) {
-    let delta = 0;
+    event.preventDefault(); // Отменяем действие по умолчанию
+    const delta = event.deltaY;
+    this.handleScroll(delta);
+  }
 
-    if (event.deltaY) {
-      delta = event.deltaY;
-    }
+  @HostListener('touchstart', ['$event'])
+  onTouchStart(event: TouchEvent) {
+    event.preventDefault(); // Отменяем действие по умолчанию
+    this.touchStartY = event.touches[0].clientY; // Записываем начальную точку касания
+  }
+
+  @HostListener('touchmove', ['$event'])
+  onTouchMove(event: TouchEvent) {
+    event.preventDefault(); // Отменяем действие по умолчанию
+    const delta = event.touches[0].clientY - this.touchStartY;
+    this.handleScroll(delta);
+  }
+
+  private handleScroll(delta: number) {
     const timeNow = new Date().getTime();
 
-    if (
-      timeNow - this.lastAnimation < 500
-    ) {
-      event.preventDefault();
+    if (timeNow - this.lastAnimation < 500) {
       return;
     }
 
@@ -57,7 +69,7 @@ export class BuffetsComponent implements OnInit {
         this.scroll();
       }
     } else {
-      if (this.currentPosition > - this.scrollHeight * (this.leftBuffetsList.length - 1)) {
+      if (this.currentPosition > -this.scrollHeight * (this.leftBuffetsList.length - 1)) {
         this.currentPosition -= this.scrollHeight;
         this.scroll();
       }

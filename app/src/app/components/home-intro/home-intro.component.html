@@ -1,12 +1,14 @@
-<section class="intro">
+<section class="intro" [ngStyle]="{ backgroundImage: 'url(' + bgImage + ')' }">
   <div class="container">
     <div class="intro-body">
       <div class="intro-item">
-        <div class="intro-item_logo" appScrollAnimation [animation]="animations.top">LOGO</div>
-        <p class="intro-item_description" appScrollAnimation [animation]="animations.left">
+        <div class="intro-item_logo">
+          <img src="assets/images/logo.png" appScrollAnimation [animation]="animations.top">
+        </div>
+        <p class="intro-item_description" appScrollAnimation [animation]="animations.bottom">
           Art of Catering was established in 2018 it has turned into one of the most upscale caterers in the Eastern Province. AOC provides innovative full-service event experience that tastefully incorporate quality, refinement, and elegance.
         </p>
-        <div class="intro-item_welcome" appScrollAnimation [animation]="animations.top">WELCOME</div>
+        <div class="intro-item_welcome" appScrollAnimation [animation]="animations.left">WELCOME</div>
       </div>
       <div class="intro-item">
         <nav class="intro-item_nav">

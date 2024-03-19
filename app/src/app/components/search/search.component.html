@@ -6,7 +6,7 @@
         <mat-label>Select an option</mat-label>
         <mat-select [(value)]="selectedSection">
           <mat-option>Gallery</mat-option>
-          <mat-option *ngFor="let section of SearchSections | keys" [value]="section">{{ section }}</mat-option>
+          <mat-option *ngFor="let section of sections" [value]="section">{{ section }}</mat-option>
         </mat-select>
       </mat-form-field>
 
@@ -17,7 +17,7 @@
       </mat-form-field>
     </div>
     <div class="gallery-images">
-      <img *ngFor="let image of gallery | section: selectedSection | search: search" [src]="deafaultPath + image.img" alt="">
+      <img *ngFor="let image of gallery | section: selectedSection | search: search" [src]="deafaultPath + image.image" alt="">
     </div>
   </section>
 </div>

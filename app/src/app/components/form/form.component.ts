@@ -78,13 +78,13 @@ export class FormComponent {
           mode: 'no-cors',
         }).then(response => response.text())
 
-        this._snackBar.open('Success form submit!');
+        this._snackBar.open('Success form submit!', '', { duration: 5000, });
         this.form.reset();
       } catch(error) {
-        this._snackBar.open((error as EmailJSResponseStatus).text);
+        this._snackBar.open((error as EmailJSResponseStatus).text, '', { duration: 5000, });
       }
     } else {
-      this._snackBar.open('Form is invalid!');
+      this._snackBar.open('Form is invalid!', '', { duration: 5000, });
     }
   }
 }

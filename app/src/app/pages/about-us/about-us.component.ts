@@ -12,6 +12,6 @@ export class AboutUsComponent {
   constructor(private contentService: ContentService) { }
 
   ngOnInit(): void {
-    this.contentService.getBAboutUsData().subscribe(data => { this.bgImage = data['parallax-image'] });
+    this.contentService.getAboutUsData().subscribe(data => { this.bgImage = data['parallax-image'] });
   }
 }
